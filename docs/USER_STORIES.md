@@ -9,3 +9,9 @@ So that the library can store book information.
 As a librarian,
 I want to borrow and return books,
 So that I can manage book availability.
+
+## Sprint 3 – Library Report
+
+As a librarian,
+I want to generate a report of all books,
+So that I can see their availability status.

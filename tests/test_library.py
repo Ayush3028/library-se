@@ -28,7 +28,13 @@ class TestLibrary(unittest.TestCase):
         with self.assertRaises(ValueError):
             lib.borrow_book(1)
 
+    def test_generate_report(self):
+        lib = Library()
+        lib.add_book(1, "Python", "Guido")
+        report = lib.generate_report()
+        self.assertIn("ID | Title", report)
+        self.assertIn("Python", report)
+
 
 if __name__ == "__main__":
     unittest.main()
-
